@@ -107,7 +107,7 @@ button{
 
 @media screen and (max-width: 720px) {
     body{
-    background: url(assets/images/background-pattern-mobile.svg) no-repeat;
+    background: url(background-pattern-mobile.svg) no-repeat;
     background-size: 100%;
  }
 
