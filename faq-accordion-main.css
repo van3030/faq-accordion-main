@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Work Sans;
+    src: url(https://fonts.google.com/specimen/Work+Sans);
+    font-style: normal;
+    font-weight: 100-900;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-pink: hsl(275, 100%, 97%);
+--Grayish-purple: hsl(292, 16%, 49%);
+--Dark-purple: hsl(292, 42%, 14%);
+
+
+--fw-normal: 400;
+--fw-regular: 600;
+--fw-dark: 700;
+
+
+--fs-50: .7rem;
+--fs-100: 16px;
+--fs-400: 1.125rem;
+--fs-500: 1.25rem;
+--fs-600: 1.5rem;
+--fs-700: 1.75rem;
+--fs-800: 2rem;
+--fs-900: 5rem;
+}
+
+*,
+::before,
+::after{
+    box-sizing:border-box;
+    margin: 0 px;
+    padding:0px;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--Light-pink);
+    background: url(assets/images/background-pattern-desktop.svg) no-repeat;
+    flex-direction: column;
+    background-size: 100%;
+    position: relative;
+
+    
+}
+
+.main-container{
+    width:100%;
+    max-width: 550px;
+    padding: 1rem;
+    background: var(--White);
+    border-radius: 20px;
+    box-shadow: 0.2px 0.2px 5px 0px var(--Grayish-purple);
+    position: absolute;
+
+}
+
+img, svg{
+    max-width: 100%;
+    cursor: pointer;
+    display: block;
+ }
+
+
+.section-title{
+    display: flex;
+    gap: 1rem;
+}
+
+p{
+    color: var(--Grayish-purple);
+    font-size: var(--fs-100);
+}
+h1,h4{
+    color: var(--Dark-purple);
+}
+ 
+.minusIcon{
+    display: none;
+ }
+
+ .nextElementContent{
+    max-height: 0;
+    overflow: hidden;
+ }
+ 
+h1,h4{
+    font-weight: var(--fw-dark);
+}
+.attribution{
+    margin-bottom: -41rem;
+}
+
+button{
+    display: flex;
+    background: transparent;
+    border: 0; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 720px) {
+    body{
+    background: url(assets/images/background-pattern-mobile.svg) no-repeat;
+    background-size: 100%;
+ }
+
+    .main-container{
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h4{
+        display: flex;
+        margin-right: auto;
+        font-size: var(--fs-50);
+    }
+
+    p{
+        font-size: var(--fs-50)
+    }
+    img, svg{
+        width: 25px;
+    }
+
+    
+}
